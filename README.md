@@ -1,9 +1,9 @@
-#### ELM327SLCAN
+### ELM327SLCAN
 
 The cheap vehicle's CAN bus sniffer based on ELM327, special [bootloader](https://github.com/qnx425/PIC18F25K80-Bootloader), and [USBtin](https://fischl.de/usbtin/).
 With this device you can monitor vehicle's CAN bus. Monitoring software – [CANHacker](https://cdn.hackaday.io/files/12644540960896/CANHackerV2.00.02.zip) or [similar](https://fischl.de/usbtin/#usbtinviewer).
 
-##### LEDs
+#### LEDs
 
 1. Red – power supply.
 2. Green – current connection status. If lights steady – connection is open. Flashes once in three seconds – connection is closed.
@@ -16,7 +16,7 @@ With this device you can monitor vehicle's CAN bus. Monitoring software – [CAN
 		The last three errors could be reset with f2 command.
 
 
-##### Switch to Bootloader mode for firmware update:
+#### Switch to Bootloader mode for firmware update:
 
 1.	Issue the command B10[CR] in RS232 terminal software (for instance, [termite](https://www.compuphase.com/software_termite.htm)).
 2.	Disconnect the COM port in RS232 terminal software.
@@ -29,7 +29,7 @@ With this device you can monitor vehicle's CAN bus. Monitoring software – [CAN
 ![](images/ELM327SLCAN.png)
 
 
-##### Filtering
+#### Filtering
 
 Implemented filtering 'Single filter mode' with three modifications as described in [SJA1000](https://www.nxp.com/docs/en/data-sheet/SJA1000.pdf) datasheet and [AN97076](https://www.nxp.com/docs/en/application-note/AN97076.pdf). The differences:
 
@@ -51,13 +51,13 @@ If you remove both checkboxes and press OK button, issued command allows all inc
 
 ![](images/filtering.png)
 
-##### Bluetooth
+#### Bluetooth
 
 Bluetooth name: OBDII  
 Bluetooth PIN: 1234  
 Serial port settings: 38400, 8n1
 
 
-##### To build new firmware, it is need to install Microchip XC8 Compiler and MinGW.
+#### To build new firmware, it is need to install Microchip XC8 Compiler and MinGW.
 
 ![](images/cmd.png)
